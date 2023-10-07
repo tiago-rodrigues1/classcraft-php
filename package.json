@@ -5,7 +5,7 @@
   "publisher": "TiagoRodrigues",
   "author": "Tiago Rodrigues",
   "icon": "images/icon.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": {
       "type": "git",
@@ -14,6 +14,16 @@
   "engines": {
     "vscode": "^1.82.0"
   },
+  "keywords": [
+    "php",
+    "getter",
+    "getters",
+    "setter",
+    "setters",
+    "class",
+    "builder",
+    "methods"
+],
   "categories": [
     "Other"
   ],
