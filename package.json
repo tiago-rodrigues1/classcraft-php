@@ -1,0 +1,88 @@
+{
+  "name": "classcraftphp",
+  "displayName": "ClassCraft PHP",
+  "description": "Create php getters and setters methods from class attributes",
+  "publisher": "tiago-rodrigues1",
+  "author": "Tiago Rodrigues",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "classCraftPhp.insertGetter",
+        "title": "ClassCraft PHP Insert Getter"
+      },
+      {
+        "command": "classCraftPhp.insertSetter",
+        "title": "ClassCraft PHP Insert Setter"
+      },
+      {
+        "command": "classCraftPhp.insertGetterAndSetter",
+        "title": "ClassCraft PHP Insert Getter & Setter"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+            "command": "classCraftPhp.insertGetter",
+            "when": "editorLangId == php"
+        },
+        {
+            "command": "classCraftPhp.insertSetter",
+            "when": "editorLangId == php"
+        },
+        {
+            "command": "classCraftPhp.insertGetterAndSetter",
+            "when": "editorLangId == php"
+        }
+      ],
+      "editor/context": [
+        {
+            "when": "resourceLangId == php",
+            "command": "classCraftPhp.insertGetter",
+            "alt": "classCraftPhp.insertGetter",
+            "group": "0_classCraftPhp@1"
+        },
+        {
+            "when": "resourceLangId == php",
+            "command": "classCraftPhp.insertSetter",
+            "alt": "classCraftPhp.insertSetter",
+            "group": "0_classCraftPhp@2"
+        },
+        {
+            "when": "resourceLangId == php",
+            "command": "classCraftPhp.insertGetterAndSetter",
+            "alt": "classCraftPhp.insertGetterAndSetter",
+            "group": "0_classCraftPhp@3"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.82.0",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}
