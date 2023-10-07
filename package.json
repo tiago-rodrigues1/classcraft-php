@@ -4,6 +4,7 @@
   "description": "Create php getters and setters methods from class attributes",
   "publisher": "tiago-rodrigues1",
   "author": "Tiago Rodrigues",
+  "icon": "images/icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.82.0"
