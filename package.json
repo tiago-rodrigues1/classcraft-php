@@ -5,7 +5,12 @@
   "publisher": "TiagoRodrigues",
   "author": "Tiago Rodrigues",
   "icon": "images/icon.png",
-  "version": "0.0.1",
+  "version": "1.0",
+  "license": "MIT",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/tiago-rodrigues1/classcraft-php"
+  },
   "engines": {
     "vscode": "^1.82.0"
   },
