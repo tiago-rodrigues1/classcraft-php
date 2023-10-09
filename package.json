@@ -5,14 +5,14 @@
   "publisher": "TiagoRodrigues",
   "author": "Tiago Rodrigues",
   "icon": "images/icon.png",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tiago-rodrigues1/classcraft-php"
   },
   "engines": {
-    "vscode": "^1.82.0"
+    "vscode": "^1.18.0"
   },
   "keywords": [
     "php",
@@ -90,7 +90,7 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.82.0",
+    "@types/vscode": "^1.18.0",
     "@types/mocha": "^10.0.2",
     "@types/node": "18.x",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
